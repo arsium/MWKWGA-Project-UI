@@ -1,7 +1,7 @@
 # MWKWGA-Project-UI 
 Make Winform Great Again
 
-*Want to support project ? https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2GM9ENW842ZES&source=url
+* Want to support project ? https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2GM9ENW842ZES&source=url
 
 Main Features :
 
