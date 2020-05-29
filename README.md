@@ -28,7 +28,6 @@ Properties :
 * -Draggable Property
 * -Icon Property
 * -Theme : Dark / Light
-* -Corrected UI Bugs
 * -BorderColor(bottom lines included)
 * -Hide Bottom Line
 * -TextColor
