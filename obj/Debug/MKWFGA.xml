@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MKWFGA
+</name>
+</assembly>
+<members>
+<member name="T:MKWFGA.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MKWFGA.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MKWFGA.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.Blend">
+ <summary>
+ Uses a fade effect. This flag can be used only if hwnd is a top-level window.
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.Center">
+ <summary>
+ Makes the windows appearing from its center | Makes the windows hiding to its center
+ Can be used with hide flag like this: dwFlags.Center Or dwFlags.Hide.
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.Hide">
+ <summary>
+ Must be used with another animation (doesn't work alone). Works with Me.Hide
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.SlideLTR">
+ <summary>
+ Makes a slide from left to right
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.SlideRTL">
+ <summary>
+ Makes a slide from right to left
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.SlideTTB">
+ <summary>
+ Makes a slide from top to bottom
+ </summary>
+</member>
+<member name="F:MKWFGA.Animations.AnimtedFlags.SlideBTT">
+ <summary>
+ Makes a slide from bottom to top
+ </summary>
+</member>
+<member name="P:MKWFGA.MKWFGA_Theme.FormBackColor">
+ <summary>
+ Choose "Custom Theme" To make this working !
+ </summary>
+ <returns></returns>
+ 
+</member>
+</members>
+</doc>

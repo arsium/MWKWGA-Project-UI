@@ -1,0 +1,10 @@
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\bin\Debug\MKWFGA.dll
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\bin\Debug\MKWFGA.pdb
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\bin\Debug\MKWFGA.xml
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.Resources.resources
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.vbproj.GenerateResource.cache
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.dll
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.xml
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.pdb
+C:\Users\mehdi\source\repos\SocketTest\MKWFGA\obj\Debug\MKWFGA.vbprojAssemblyReference.cache
