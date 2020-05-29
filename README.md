@@ -1,6 +1,63 @@
 # MWKWGA-Project-UI
 Make Winform Great Again
 
+Main Features :
+
+-Native Blur Effect
+-Custom Winform
+-Native Animations
+
+Detail Features (and how to use it) :
+
+-Native Blur Effect : MKWFGA.Aero.SetAero10(Me.Handle) / Must to be set in Load event / Choose Black Color to get full blur effect (others colors work but the real color to get this effect is black)
+
+Note : MKWFGA.Aero.SetAero7(Me.Handle) must not be used.
+
+-Custom Winforms :
+
+Properties :
+-Sizeable Property (enable or disable)
+-Custom BackColor
+-Custom Theme (must be selected in order to use Custom BackColor)
+-ThemeControlBox (dark or light choose depending on your UI)
+-Hide Icon
+-TextAlign : Middle , Left (adaptive with hide Icon) , right , custom
+-TextFont Property
+-Draggable Property
+-Icon Property
+-Theme : Dark / Light
+-Corrected UI Bugs
+-BorderColor(bottom lines included)
+-Hide Bottom Line
+-TextColor
+-Resize features (left , bottom ,right)
+-Draggable
+-Customizable txt
+-Hide or Show MinimizeBox
+-Hide or Show CloseBox
+-Hide or Show MaximizeBox
+-Hide or Show BottomLine
+How to use : go to your form designer and replace "Inherits Form" by "MKWFGA.MKWFGA_Theme"
+
+-Native Animations :
+
+-Blend
+-Hide
+-Center
+-SlideLTR (slide left to right)
+-SlideRTL (slide right to left)
+-SlideTTB (slide top to bottom)
+-SlideBTT (slide bottom to top)
+
+How to use :
+
+If you want to start the form / control using an animation use like : MKWFGA.Animations.Animation(Me.Handle, 7000, AnimtedFlags.SlideBTT) must be set in Load Event
+
+If you want to close the form / control using an animation use like : MKWFGA.Animations.Animation(Me.Handle, 7000, AnimtedFlags.Hide Or AnimtedFlags.SlideBTT, True)
+
+If you want to hide a control using an animation use like : MKWFGA.Animations.Animation(Me.Handle, 7000, AnimtedFlags.Hide Or AnimtedFlags.SlideBTT)
+
+
 
 MIT License
 
