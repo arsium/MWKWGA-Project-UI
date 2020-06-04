@@ -20,6 +20,8 @@ Public Class MKWFGA_Theme
         Me.Controls.Add(Container_3)
         Me.Controls.Add(Container_4)
 
+
+
     End Sub
 
 
@@ -69,8 +71,6 @@ Public Class MKWFGA_Theme
         End Set
     End Property
 
-
-
     Protected Overrides Sub CreateHandle()
         MyBase.CreateHandle()
         FindForm.FormBorderStyle = FormBorderStyle.None
@@ -109,26 +109,9 @@ Public Class MKWFGA_Theme
     End Sub
 
 
-    Private g As Icon = SystemIcons.WinLogo
-    Public Overloads Property Icon() As Icon
-        Get
-            Return g
+    ' Private g As Icon = Me.Icon
 
-            Container_4.Image = Bitmap.FromHicon(g.Handle)
-            Me.Refresh()
-
-
-        End Get
-        Set(ByVal value As Icon)
-            g = value
-
-            Container_4.Image = Bitmap.FromHicon(g.Handle)
-            Me.Refresh()
-
-
-        End Set
-    End Property
-
+    '    Container_4.Image = Bitmap.FromHicon(Me.Icon.Handle)
     Private WithEvents Container_ As New Button
     Private WithEvents Container_2 As New Button
     Private WithEvents Container_3 As New Button
@@ -321,7 +304,10 @@ Public Class MKWFGA_Theme
             Me.Refresh()
         End Set
     End Property
-
+    Protected Overrides Sub OnInvalidated(e As InvalidateEventArgs)
+        MyBase.OnInvalidated(e)
+        Container_4.Image = Bitmap.FromHicon(Me.Icon.Handle)
+    End Sub
     Protected Overrides Sub OnPaint(e As PaintEventArgs)
 
 
@@ -331,6 +317,8 @@ Public Class MKWFGA_Theme
         Container_3.Location = New Point(Me.Width - 102, 2)
         Container_4.Location = New Point(15, 2)
 
+
+        '   Container_4.Image = New Bitmap(Bitmap.FromHicon(Me.Icon.Handle))
 
         Container_.FlatAppearance.BorderSize = 1
         Container_2.FlatAppearance.BorderSize = 1
@@ -345,7 +333,6 @@ Public Class MKWFGA_Theme
         Container_.FlatAppearance.BorderColor = BDColor
         Container_2.FlatAppearance.BorderColor = BDColor
         Container_3.FlatAppearance.BorderColor = BDColor
-
 
 
 
@@ -519,7 +506,6 @@ Public Class MKWFGA_Theme
     End Sub
 
 
-
     <DllImport("User32.dll")>
     Public Shared Function GetDC(ByVal hwnd As IntPtr) As IntPtr
 
@@ -528,6 +514,7 @@ Public Class MKWFGA_Theme
     Public Shared Sub ReleaseDC(ByVal dc As IntPtr)
 
     End Sub
+
 
     Protected Overrides Sub OnTextChanged(e As EventArgs)
 
@@ -596,7 +583,6 @@ Public Class MKWFGA_Theme
     End Property
 
 
-
     ''Native API adpated from  : https://github.com/RiyadPathan/DragControl/blob/master/DragControl.vb
     <DllImport("user32.dll")>
     Public Shared Function SendMessage(ByVal a As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, ByVal lParam As Integer) As Integer
@@ -640,6 +626,12 @@ Public Class MKWFGA_Theme
     Const HTLEFT As Integer = 10
 
 
+    Const WM_PAINT = &HF
+
+    Const WM_NCPAINT = &H85
+
+    Const WM_PAINTICON = &H26
+
     'https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest 
     'https://social.msdn.microsoft.com/Forums/vstudio/en-US/0262637f-2448-4da2-a40c-b3232ba798bc/float-a-borderless-form-on-desktop?forum=vbgeneral
     'Second link modified By Arsium reading doc in first link
@@ -647,6 +639,11 @@ Public Class MKWFGA_Theme
 
         Select Case m.Msg
 
+
+
+                '   If Me.Icon.Width > 0 And Me.Icon.Height > 0 Then
+
+               ' End If
 
 
             Case WM_NCHITTEST
